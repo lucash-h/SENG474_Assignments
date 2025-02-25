@@ -20,12 +20,25 @@ This is the abstract of your report. It should provide a brief summary of the co
 This is the introduction section. Here you should introduce the topic of your report, provide some background information, and state the objectives of your work.
 
 \section{Linear SVM }
-This section discusses the hyperparameter tuning and results of a linear support vector machine implementation. This model was tuned using K-fold Cross Validation and several values of C, the regularization parameter(CHECK THIS SHIT). To find the optimal value of C, the following format was used B > 1 and C0 > 0 with (B * i) ^C0 = C where i is the iteration number. 
+
+This section discusses the hyperparameter tuning and results of a linear support vector machine implementation. 
+
+\subsection{Optimal Tuning}
+This model was tuned using K-fold Cross Validation and several values of C, the regularization parameter CHECK THIS SHIT. 
+To find the optimal value of C, the following format was used B > 1 and C0 > 0 with C = C0 raised to the B * ith power where i is the iteration number. The optimal value for C with the lowest average loss for kfold validation where k = 10 with 2000 data points sampled from the original 12000 was 2.2 * 10^4 or 22193 or 1.1 ** 7*15.
+
 \begin{figure}
     \centering
     \includegraphics{Assets/LinearSVM_TrainLosses.png}
     \caption{Linear SVM Training Losses}
 \end{figure}
+
+\subsection{Total Train and Test Loss}
+
+BLAH BLAH BLAH RESULTS THAT TAKE A LONG TIME TO COMPUTE
+
+
+
 
 \section{Kernelized SVM}
 This section should describe the methods and procedures you used in your work. Be sure to provide enough detail so that someone else could replicate your study.
@@ -39,8 +52,5 @@ In this section, you should interpret your results and discuss their implication
 \section{Conclusion}
 This is the conclusion section. Summarize the main findings of your report and restate the significance of your work.
 
-\section{References}
-\bibliographystyle{plain}
-\bibliography{references}
 
 \end{document}
