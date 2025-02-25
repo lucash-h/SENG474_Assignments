@@ -20,7 +20,12 @@ This is the abstract of your report. It should provide a brief summary of the co
 This is the introduction section. Here you should introduce the topic of your report, provide some background information, and state the objectives of your work.
 
 \section{Linear SVM }
-In this section, you should discuss previous work related to your topic. This can include a literature review and a discussion of how your work builds on or differs from previous studies.
+This section discusses the hyperparameter tuning and results of a linear support vector machine implementation. This model was tuned using K-fold Cross Validation and several values of C, the regularization parameter(CHECK THIS SHIT). To find the optimal value of C, the following format was used B > 1 and C0 > 0 with (B * i) ^C0 = C where i is the iteration number. 
+\begin{figure}
+    \centering
+    \includegraphics{Assets/LinearSVM_TrainLosses.png}
+    \caption{Linear SVM Training Losses}
+\end{figure}
 
 \section{Kernelized SVM}
 This section should describe the methods and procedures you used in your work. Be sure to provide enough detail so that someone else could replicate your study.
