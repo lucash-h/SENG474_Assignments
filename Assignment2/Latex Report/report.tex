@@ -28,10 +28,17 @@ This model was tuned using K-fold Cross Validation and several values of C, the 
 To find the optimal value of C, the following format was used B > 1 and C0 > 0 with C = C0 raised to the B * ith power where i is the iteration number. The optimal value for C with the lowest average loss for kfold validation where k = 10 with 2000 data points sampled from the original 12000 was 2.2 * 10^4 or 22193 or 1.1 ** 7*15.
 
 \begin{figure}
+    \includegraphics[width=0.2\linewidth]{Assets/LinearSVM_TrainLosses.png}
     \centering
-    \includegraphics{Assets/LinearSVM_TrainLosses.png}
     \caption{Linear SVM Training Losses}
 \end{figure}
+
+\begin{figure}
+    \includegraphics[width=0.2\linewidth]{Assets/LinearSVM_AVGTrainLoss.png}
+    \centering
+    \caption{Linear SVM Training Losses}
+\end{figure}
+
 
 \subsection{Total Train and Test Loss}
 
